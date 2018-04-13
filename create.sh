@@ -20,7 +20,7 @@ do
   for j in $(seq 0 $(expr $y - 1))
   do
     convert $tmp1 -crop ${emojipx}x${emojipx}+$(expr $emojipx \* $i)+$(expr $emojipx \* $j) ${name}_${j}_${i}.$ext
-    echo -n ":${name}_${j}_${i}:"
+    echo -n ":${name}_${i}_${j}:"
   done
     echo
 done
